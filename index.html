@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Name</title>
+<meta name="description" content="Academic homepage: research, publications and blog.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/photo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
+<link rel="stylesheet" href="style.css">
+<!-- Applies saved/system theme before paint (no flash) -->
+<script>(function(){var s='auto',m=matchMedia('(prefers-color-scheme:dark)'),d=document.documentElement;try{s=localStorage.getItem('theme')||'auto'}catch(e){}function f(){d.dataset.theme=s=='auto'?(m.matches?'dark':'light'):s}window.setTheme=function(v){s=v;try{localStorage.setItem('theme',v)}catch(e){}f()};window.themeMode=function(){return s};m.addEventListener('change',f);f()})()</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script defer src="content.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<div id="bar" hidden></div>
+<div class="wrap">
+  <aside><div class="id"></div><nav id="nav" aria-label="Sections"></nav></aside>
+  <main>
+    <div id="home"></div>
+    <article id="post" hidden></article>
+    <footer>© <span id="yr"></span> <span id="fn"></span>. Built with plain HTML, CSS and JavaScript.</footer>
+  </main>
+</div>
+</body>
+</html>

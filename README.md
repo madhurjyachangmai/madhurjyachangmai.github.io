@@ -1,16 +1,20 @@
-## Hi there 👋
+# Academic personal website
 
-<!--
-**madhurjyachangmai/madhurjyachangmai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Plain HTML/CSS/JS. No build step, so it runs as-is on GitHub Pages.
 
-Here are some ideas to get you started:
+## Publish
+1. Create a repository named `<your-username>.github.io` and upload all these files to its root.
+2. On GitHub: Settings, then Pages, then Source "Deploy from a branch", Branch `main`, folder `/ (root)`.
+3. Your site goes live at `https://<your-username>.github.io`.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Update
+| To change | Edit |
+|---|---|
+| Name, bio, links, news, publications, blog list | `content.js` |
+| A blog post | `posts/<slug>.md` (plus its entry in `content.js`) |
+| Photo, figures, videos, CV | `assets/` |
+| Colors and fonts | top of `style.css` (`[data-theme=light]` and `[data-theme=dark]`) |
+
+## Preview locally
+Posts load with `fetch`, so open the site through a server, not by double-clicking:
+`python3 -m http.server`, then visit `http://localhost:8000`.
