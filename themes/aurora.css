@@ -1,0 +1,19 @@
+/* Aurora: soft gradient backdrop, frosted-glass panels, violet-to-sky accent. */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+:root{--sans:"Plus Jakarta Sans",system-ui,sans-serif;--serif:var(--sans)}
+[data-theme=light]{--bg:#eef0fb;--surface:rgba(255,255,255,.66);--ink:#1a1b2e;--mut:#5b5e7a;--line:rgba(90,90,160,.16);--acc:#5b3fe0;--acc-s:#e7e2ff;--code:rgba(240,238,255,.9)}
+[data-theme=dark]{--bg:#0b0c1a;--surface:rgba(30,32,60,.55);--ink:#ecebff;--mut:#a4a6c8;--line:rgba(160,160,255,.16);--acc:#b5a2ff;--acc-s:rgba(120,100,255,.18);--code:rgba(15,16,34,.8)}
+body{font-size:16.5px;line-height:1.7;background:radial-gradient(60vw 50vh at 10% -5%,rgba(120,100,255,.28),transparent 60%),radial-gradient(50vw 45vh at 95% 10%,rgba(60,180,255,.22),transparent 60%),radial-gradient(60vw 50vh at 50% 105%,rgba(255,120,200,.16),transparent 60%),var(--bg);background-attachment:fixed}
+aside{padding-top:80px}
+main{background:var(--surface);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--line);border-radius:28px;padding:48px 52px;margin:32px 0}
+h2,.id h1,#post h1,.cb h3{font-family:var(--sans);font-weight:700;letter-spacing:-.02em}
+h2{font-size:1.7rem}.id h1{font-size:1.9rem}#post h1{font-size:2.3rem}.cb h3{font-size:1.1rem;font-weight:600}
+.ph{border-radius:30%;box-shadow:0 12px 30px -10px rgba(91,63,224,.55)}
+nav a{border-left:0;border-radius:10px;padding:8px 14px}nav a.on{background:var(--acc-s);color:var(--acc)}
+.chip{background:var(--acc-s);border-color:transparent;color:var(--acc)}
+button.chip.on{background:linear-gradient(135deg,#6a4cff,#3aa0ff);color:#fff}
+.card{border-radius:18px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.card:hover{box-shadow:0 14px 34px -14px rgba(91,63,224,.5)}
+input,#theme{border-radius:12px}
+#bar{height:4px;background:linear-gradient(90deg,#6a4cff,#3aa0ff)}
+@media(max-width:900px){main{padding:26px 20px;border-radius:22px;margin:16px 0}nav a{padding:10px 12px;border-radius:10px}nav a.on{border-color:transparent}}

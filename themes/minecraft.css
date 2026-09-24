@@ -1,0 +1,44 @@
+/* Minecraft: pixel fonts, GUI-panel bevels, grass-block accents. Day = light, Night = dark. */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap");
+:root{--sans:"VT323","Courier New",monospace;--serif:"VT323","Courier New",monospace;--px:"Press Start 2P","Courier New",monospace}
+[data-theme=light]{--bg:#6db3ee;--surface:#c6c6c6;--ink:#262626;--mut:#4a4a4a;--line:#373737;--acc:#2a5c14;--acc-s:#a9d18a;--code:#a5a5a5;--grass:#4a7f28;--hi:#f2f2f2;--lo:#6b6b6b;--k:#4b2280;--s:#05421c;--c:#404040;--n:#6b2b00}
+[data-theme=dark]{--bg:#15151b;--surface:#3b3b44;--ink:#f2f2f2;--mut:#bdbdc6;--line:#0a0a0d;--acc:#8fe04a;--acc-s:#2f4a1a;--code:#1f1f26;--grass:#4a7f28;--hi:#6c6c78;--lo:#1c1c22;--k:#d6a3ff;--s:#86e69a;--c:#9090a0;--n:#ffc26b}
+body{font-size:23px;line-height:1.35}
+.wrap{gap:0 24px;max-width:1240px}
+aside,main{background:var(--surface);border:3px solid var(--line);border-top:12px solid var(--grass);box-shadow:inset 3px 3px 0 var(--hi),inset -3px -3px 0 var(--lo)}
+aside{top:20px;height:calc(100vh - 40px);margin:20px 0;padding:28px 22px;align-self:start}
+main{margin:20px 0;padding:36px 44px}
+h2,.id h1,#post h1,.cb h3,h3{font-family:var(--px);font-weight:400;letter-spacing:0}
+h2,.id h1,#post h1{text-shadow:2px 2px 0 rgba(0,0,0,.22)}
+h2{font-size:1.05rem;line-height:1.6;margin-bottom:22px}
+h2::before{content:"";display:inline-block;width:14px;height:14px;margin-right:10px;background:var(--grass);box-shadow:inset -3px -3px 0 rgba(0,0,0,.3),inset 3px 3px 0 rgba(255,255,255,.3)}
+h3{font-size:.7rem;line-height:1.6}
+.id h1{font-size:.95rem;line-height:1.6;overflow-wrap:anywhere}
+#post h1{font-size:1.3rem;line-height:1.5}
+.cb h3{font-size:.72rem;line-height:1.7}
+.id p,.tl span{font-size:20px;line-height:1.25}
+nav{font:400 22px var(--sans)}nav a{border-left-width:4px}nav a.on{background:var(--acc-s);color:var(--ink)}
+.ph{border-radius:0;border:4px solid var(--line);box-shadow:4px 4px 0 var(--lo);image-rendering:pixelated}
+.chip,#theme,pre>button{border-radius:0;border:2px solid #000;background:#8b8b8b;color:#fff;text-shadow:2px 2px #3f3f3f;box-shadow:inset -3px -3px #555,inset 3px 3px #b8b8b8;font:400 20px/1 var(--sans);padding:6px 12px}
+span.chip{background:var(--acc-s);color:var(--ink);text-shadow:none;border-color:var(--line);box-shadow:none}
+button.chip:hover,#theme:hover{background:#6f7fd0;color:#fff;border-color:#000}
+button.chip.on{background:var(--grass);color:#fff;border-color:#000}
+pre>button{font-size:17px;padding:2px 8px;top:6px;right:6px}
+input{font:22px var(--sans);border-radius:0;border:3px solid #a0a0a0;background:#000;color:#fff}
+input::placeholder{color:#9a9a9a}
+.tl li,#pl li{border-top:2px solid var(--line)}
+.t{font-size:25px}.acts a,.acts button,.back{font:400 21px var(--sans)}
+.card{border-radius:0;border:3px solid var(--line);box-shadow:inset 3px 3px 0 var(--hi),inset -3px -3px 0 var(--lo);transition:transform .12s steps(2)}
+.card:hover{border-color:var(--grass)}.card img{border-bottom:3px solid var(--line)}
+.cb .mut,.tg,figcaption,footer{font-size:18px}.cb p{font-size:20px;line-height:1.2}
+code{font-family:var(--sans);font-size:1em;border-radius:0}
+pre{border-radius:0;border:3px solid var(--line);font-size:20px}
+.prose img,.prose video,.prose iframe,#lb img{border-radius:0;border:3px solid var(--line)}
+.prose blockquote{border-left-width:6px}.prose table{font-size:20px}
+#bar{height:8px;background:var(--grass)}
+@media(max-width:900px){
+ .id,nav{background:var(--surface)}
+ .id{margin:12px 0 0;padding:16px;border:3px solid var(--line);border-top:10px solid var(--grass)}
+ nav{border-bottom:3px solid var(--line)}
+ main{padding:22px 16px;margin:12px 0}
+}

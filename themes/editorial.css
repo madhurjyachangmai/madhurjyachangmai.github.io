@@ -1,0 +1,20 @@
+/* Editorial: one centered reading column, masthead on top, forest-green ink. */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&display=swap");
+[data-theme=light]{--bg:#f4f6f2;--surface:#fff;--ink:#141a16;--mut:#586259;--line:#d9ded6;--acc:#1f5b45;--acc-s:#e3eee7;--code:#edf1ea}
+[data-theme=dark]{--bg:#0f1411;--surface:#161d18;--ink:#e9efe9;--mut:#9aa89d;--line:#27312a;--acc:#8fd1b0;--acc-s:#1a2a21;--code:#111813}
+body{font-size:19px}
+.wrap{grid-template-columns:minmax(0,1fr);max-width:760px;padding:0 20px}
+aside{display:contents}
+.id{display:block;text-align:center;padding:64px 0 28px}
+.ph{width:112px;height:112px;border-radius:50%;margin:0 auto}
+.id h1,h2,#post h1,.cb h3{font-family:"Fraunces",var(--serif);font-weight:600}
+.id h1{font-size:2.5rem;line-height:1.1;letter-spacing:-.02em;margin:20px 0 10px}
+.links{justify-content:center}
+nav{position:sticky;top:0;z-index:10;flex-direction:row;justify-content:safe center;align-items:center;gap:22px;background:var(--bg);border-bottom:1px solid var(--line);margin:0 -20px;padding:0 20px;overflow-x:auto}
+nav a{border-left:0;border-bottom:2px solid transparent;padding:14px 2px;white-space:nowrap}nav a.on{border-color:var(--acc)}
+#theme{margin:0 0 0 8px;align-self:center;white-space:nowrap}
+main{padding-top:44px}
+h2{font-size:1.8rem}
+.card{border-radius:6px}.card:hover{transform:none}
+@media(max-width:900px){body{font-size:17.5px}}
+@media(max-width:600px){.id h1{font-size:1.9rem}}
