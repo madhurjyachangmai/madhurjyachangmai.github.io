@@ -1,8 +1,8 @@
 /* ============ EDIT THIS FILE to update your site ============ */
 const SITE = {
-  name: "Your Name",
-  me: "Y. Name",                       // how your name appears in author lists (gets bolded)
-  role: "Postdoctoral Researcher",
+  name: "Madhurjya Changmai",
+  me: "M. Changmai",                       // how your name appears in author lists (gets bolded)
+  role: "Computational Physicist",
   affil: "Department of Computer Science, University Name",
   photo: "assets/photo.svg",           // replace with your own photo (square works best)
   email: "you@university.edu",
