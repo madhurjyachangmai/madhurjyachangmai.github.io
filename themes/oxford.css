@@ -1,0 +1,23 @@
+/* Oxford: navy sidebar, gold rules, classical serif. Formal and institutional. */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap");
+:root{--disp:"Cormorant Garamond",Georgia,serif}
+[data-theme=light]{--bg:#f4f5f9;--surface:#fff;--ink:#1a2233;--mut:#5a6479;--line:#dcdfe7;--acc:#1b3a6b;--acc-s:#e8edf6;--code:#eef0f5;--navy:#12274a;--gold:#a67c1f}
+[data-theme=dark]{--bg:#0a0e17;--surface:#111826;--ink:#e6e9f1;--mut:#9aa4b8;--line:#232c3d;--acc:#9bb8ec;--acc-s:#16223a;--code:#0d1320;--navy:#0f1c36;--gold:#d9b455}
+aside{--ink:#f4f6fb;--mut:#b7c2da;--line:#2d4675;--acc:#e3bd5a;--surface:#1b3462;background:var(--navy);color:var(--ink);margin:24px 0;height:calc(100vh - 48px);top:24px;padding:40px 28px;align-self:start;border-bottom:4px solid var(--gold)}
+.id,nav{background:var(--navy)}
+.ph{border-radius:50%;border:3px solid var(--gold)}
+.id h1{font:600 2.3rem/1.05 var(--disp);letter-spacing:0}
+main{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--gold);margin:24px 0;padding:52px 56px}
+h2{font:600 2.2rem/1.15 var(--disp);margin-bottom:26px;letter-spacing:0}
+h2::after{content:"";display:block;width:44px;height:2px;background:var(--gold);margin-top:10px}
+.prose h2{font-size:1.9rem}.prose h2::after{display:none}
+#post h1{font:600 3rem/1.08 var(--disp);letter-spacing:0}
+.cb h3{font:700 1.35rem/1.25 var(--disp)}
+.chip,.card,input,#theme{border-radius:2px}
+.card:hover{transform:none;box-shadow:0 12px 26px -16px rgba(18,39,74,.5)}
+@media(max-width:900px){
+ .id{margin:0 -20px;padding:28px 20px 18px}
+ nav{border-bottom:2px solid var(--gold)}
+ main{padding:28px 18px;margin:16px 0}
+ .id h1{font-size:1.9rem}#post h1{font-size:2.2rem}
+}

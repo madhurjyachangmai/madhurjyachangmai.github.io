@@ -1,0 +1,21 @@
+/* Chalkboard: lecture-hall slate with a wooden frame (dark), whiteboard with marker ink (light). */
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+:root{--sans:"Patrick Hand","Comic Sans MS",cursive,sans-serif}
+[data-theme=light]{--bg:#f6f8f7;--surface:#fff;--ink:#1c2836;--mut:#526071;--line:#a9b4c2;--acc:#1b4fb3;--acc-s:#e6eefc;--code:#eef2f7;--frame:#b3bcc6}
+[data-theme=dark]{--bg:#20382f;--surface:rgba(255,255,255,.05);--ink:#f1f4ec;--mut:#b7c5ba;--line:rgba(241,244,236,.32);--acc:#ffe08a;--acc-s:rgba(255,224,138,.12);--code:rgba(0,0,0,.26);--frame:#8b6a46;--c:#9fb3a7}
+body{font-size:18px;background:radial-gradient(90% 60% at 15% 0%,rgba(255,255,255,.08),transparent 60%),radial-gradient(70% 50% at 90% 100%,rgba(255,255,255,.05),transparent 60%),var(--bg)}
+body::before{content:"";position:fixed;inset:0;border:12px solid var(--frame);box-shadow:inset 0 0 18px rgba(0,0,0,.35);pointer-events:none;z-index:50}
+h2,.id h1,#post h1,.cb h3,h3{font-family:var(--sans);font-weight:400;letter-spacing:0}
+h2{display:inline-block;font-size:2.1rem;border-bottom:3px solid var(--acc);padding-bottom:2px;margin-bottom:24px;transform:rotate(-.6deg)}
+.prose h2{font-size:1.8rem;transform:none}
+.id h1{font-size:2.4rem}#post h1{font-size:2.7rem}h3{font-size:1.25rem}.cb h3{font-size:1.4rem}
+.ph{border-radius:50%;border:3px solid var(--acc)}
+nav{font:400 19px var(--sans)}nav a{border-left-style:dashed}nav a.on{color:var(--acc)}
+.id p,.tl span,input,.acts a,.acts button,.prose table{font-size:17px}
+.cb .mut,.tg,figcaption,footer,.back{font-size:16px}
+.chip,#theme{font:400 16px/1 var(--sans);border-style:dashed;padding:5px 12px}
+pre>button{font-size:14px}
+.tl li,#pl li{border-top:1px dashed var(--line)}
+.card{border:1.5px dashed var(--line);border-radius:10px 14px 10px 14px}
+.card:hover{border-color:var(--acc);transform:rotate(-.6deg) translateY(-2px)}
+@media(max-width:600px){body::before{border-width:6px}}

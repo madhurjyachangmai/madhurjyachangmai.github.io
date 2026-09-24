@@ -1,0 +1,18 @@
+/* Lab notebook: graph paper with a red margin line (light), blueprint (dark). IBM Plex type. */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap");
+:root{--serif:"IBM Plex Serif",Georgia,serif;--sans:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+[data-theme=light]{--bg:#fbfcfe;--surface:#fff;--ink:#172033;--mut:#56617a;--line:#cfd7e6;--acc:#1f4fd8;--acc-s:#e8eefc;--code:#f0f3fa;--grid:rgba(60,110,200,.10);--margin:rgba(214,64,64,.4)}
+[data-theme=dark]{--bg:#0d2a4a;--surface:#123457;--ink:#e8f1ff;--mut:#a9c0dc;--line:#2d5480;--acc:#8fd3ff;--acc-s:#173d66;--code:#0b2340;--grid:rgba(255,255,255,.07);--margin:rgba(255,140,140,.35);--k:#d8b4ff;--s:#9ee6c0;--c:#7f9cc0;--n:#ffc98a}
+body{font-size:17px;line-height:1.7;background:linear-gradient(var(--grid) 1px,transparent 1px) 0 0/24px 24px,linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/24px 24px,var(--bg)}
+main{border-left:2px solid var(--margin);padding-left:40px}
+.id h1{font:600 1.7rem/1.2 var(--sans);letter-spacing:-.01em}
+h2{font:600 1.45rem/1.3 var(--sans);border-bottom:1px solid var(--ink);padding-bottom:8px;letter-spacing:-.005em}
+.prose h2{font-size:1.3rem;border:0;padding:0}
+#post h1{font:600 2rem/1.2 var(--sans)}.cb h3{font:600 1.1rem/1.35 var(--sans)}
+nav,.tl span,.cb .mut,.tg,figcaption,footer,.chip,.acts a,.acts button,.back,#theme,input{font-family:var(--mono)}
+nav{font-size:13.5px}code{font-family:var(--mono)}
+.ph{border-radius:2px;padding:6px;background:var(--surface);border:1px solid var(--line);box-shadow:3px 3px 0 var(--line)}
+.chip,input,#theme,pre{border-radius:3px}
+.card{border-radius:3px;box-shadow:5px 5px 0 var(--line)}
+.card:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--acc)}
+@media(max-width:900px){main{padding-left:14px}}
